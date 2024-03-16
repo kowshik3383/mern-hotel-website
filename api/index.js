@@ -15,8 +15,8 @@ mongoose.connect(uri)
 app.use(express.json());
 
 // Route for handling requests related to users
-app.use('/server/user', userRoute);
-app.use('/server/auth',authRoute);
+app.use('/api/user', userRoute);
+app.use('/api/auth',authRoute);
 
 // Error handler for invalid routes
 app.use((req, res, next) => {
