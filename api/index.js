@@ -13,6 +13,7 @@ mongoose.connect(uri)
 
 // Middleware to parse JSON bodies
 app.use(express.json());
+app.use(cors());
 
 // Route for handling requests related to users
 app.use('/api/user', userRoute);
